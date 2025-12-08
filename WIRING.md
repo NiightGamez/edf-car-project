@@ -6,7 +6,7 @@
 
 | Component               | Pin (Wire Color) | Arduino Uno R4 Pin | Notes                            |
 | :---------------------- | :--------------- | :----------------- | :------------------------------- |
-| **ESC Signal**          | Signal (N/A)     | **D9**             | PWM output for throttle control. |
+| **ESC Signal**          | Signal (White)   | **D9**             | PWM output for throttle control. |
 | **Ultrasonic Trigger**  | Trig (Red)       | **D5**             | Sends the sonic pulse.           |
 | **Ultrasonic Echo**     | Echo (Orange)    | **D6**             | Receives the reflected pulse.    |
 | **Ultrasonic VCC (5V)** | VCC (Brown)      | **Power 5v**       | Sends 5V power to sensor         |
