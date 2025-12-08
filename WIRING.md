@@ -4,11 +4,13 @@
 
 ## 🔌 Signal and Control Connections
 
-| Component | Pin (Wire Color) | Arduino Uno R4 Pin | Notes |
-| :--- | :--- | :--- | :--- |
-| **ESC Signal** | Signal (White/Yellow) | **D9** | PWM output for throttle control. |
-| **Ultrasonic Trigger** | Trig | **D5** | Sends the sonic pulse. |
-| **Ultrasonic Echo** | Echo | **D6** | Receives the reflected pulse. |
+| Component               | Pin (Wire Color) | Arduino Uno R4 Pin | Notes                            |
+| :---------------------- | :--------------- | :----------------- | :------------------------------- |
+| **ESC Signal**          | Signal (N/A)     | **D9**             | PWM output for throttle control. |
+| **Ultrasonic Trigger**  | Trig (Red)       | **D5**             | Sends the sonic pulse.           |
+| **Ultrasonic Echo**     | Echo (Orange)    | **D6**             | Receives the reflected pulse.    |
+| **Ultrasonic VCC (5V)** | VCC (Brown)      | **Power 5v**       | Sends 5V power to sensor         |
+| **Ultrasonic GND**      | GND (Yellow)     | **Power GND**      | Supplies ground for sensor       |
 
 ## 🔋 Power Connections
 
