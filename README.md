@@ -26,7 +26,7 @@ This system uses an **Arduino Uno R4 WiFi** board as the master controller for a
     * `Arduino_LED_Matrix` (For the onboard matrix)
     * `ArduinoBLE` (For Bluetooth Low Energy control)
 
-2.  **Upload Code:** Copy the contents of `pinewood_derby_car.ino` and upload it to your Arduino board.
+2.  **Upload Code:** Copy the contents of edf_car.ino` and upload it to your Arduino board.
 
 3.  **BLE Connection (Master Key):**
     * Download **nRF Connect** on your Android phone.
