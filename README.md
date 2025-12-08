@@ -4,13 +4,13 @@ This system uses an **Arduino Uno R4 WiFi** board as the master controller for a
 
 ## 📋 Parts List
 
-| Component | Function | Status |
-| :--- | :--- | :--- |
-| **Microcontroller** | Arduino Uno R4 WiFi (or Freenove V5) | **Have** |
-| **Trigger Sensor** | HC-SR04 Ultrasonic Sensor | **Have** |
-| **Motor Controller** | 30A Brushless Electronic Speed Controller (ESC) | **Pending** |
-| **Propulsion** | 30mm Ducted Fan Unit (Brushless Motor) | **Pending** |
-| **Power** | 3S 11.1V 1500mAh LiPo Battery | **Pending** |
+| Component            | Function                                        | Status   |
+| :------------------- | :---------------------------------------------- | :------- |
+| **Microcontroller**  | Arduino Uno R4 WiFi (or Freenove V5)            | **Have** |
+| **Trigger Sensor**   | HC-SR04 Ultrasonic Sensor                       | **Have** |
+| **Motor Controller** | 30A Brushless Electronic Speed Controller (ESC) | **Have** |
+| **Propulsion**       | 30mm Ducted Fan Unit (Brushless Motor)          | **Have** |
+| **Power**            | 3S 11.1V 1500mAh LiPo Battery                   | **Have** |
 ## ✅Things to do
 - Add more functionality while using BLE
 - External Monitoring (Be able to view serial monitor and output wirelessly)
@@ -24,7 +24,17 @@ This system uses an **Arduino Uno R4 WiFi** board as the master controller for a
 2.  **Arming:** Connecting via BLE sends the `THROTTLE_MIN` pulse to the ESC, arming the motor controller and enabling the trigger system.
 3.  **Mode Select:** The BLE connection allows the user to switch between **MANUAL TRIGGER** and **SENSOR AUTO-TRIGGER** mode.
 4.  **Race:** When triggered, the system simulates a full throttle run for 3 seconds.
-
+## Arming:
+- **BLE IS REQUIRED**
+	- Connect with nRF Connnect
+	```
+	UUID Ending with 002
+		- Set to 01 for Manual Trigger Mode (Disables sensor. Car is fired only by BLE Command)
+		- Set to 02 Enables sensor. (Car fires automatically when pin drops)
+	UUID Ending with 001
+		- Set to 01 for Start Race/Fire Engine (Manual Sensor Overide) 	  
+	```
+	
 ## 🛠️ Initial Setup Instructions
 
 1.  **Install Libraries:** In the Arduino IDE, install the following libraries:
