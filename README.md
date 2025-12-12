@@ -11,13 +11,6 @@ This system uses an **Arduino Uno R4 WiFi** board as the master controller for a
 | **Motor Controller** | 30A Brushless Electronic Speed Controller (ESC) | **Have** |
 | **Propulsion**       | 30mm Ducted Fan Unit (Brushless Motor)          | **Have** |
 | **Power**            | 3S 11.1V 1500mAh LiPo Battery                   | **Have** |
-## ✅Things to do
-- Add more functionality while using BLE
-- External Monitoring (Be able to view serial monitor and output wirelessly)
-- Get components wired up ++ test prior to full build
-- Customize LED Matrix (If time permits)
-- More controlled fan curve for different modes (control RPMs better)
-- Change back to quick sensor data rate (less delay currently at 3 secs)
 ## 💡 System Logic
 
 1.  **Safety Master Key:** The system is completely inert (**DISARMED**) until a phone connects via BLE.
